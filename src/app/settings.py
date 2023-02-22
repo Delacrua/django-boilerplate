@@ -12,6 +12,7 @@ DEBUG = env("DEBUG", cast=bool, default=False)
 CI = env("CI", cast=bool, default=False)
 
 include(
+    "conf/auth.py",
     "conf/boilerplate.py",
     "conf/db.py",
     "conf/http.py",
@@ -20,6 +21,4 @@ include(
     "conf/middleware.py",
     "conf/static.py",
     "conf/templates.py",
-
-    "conf/settings.py",
 )
