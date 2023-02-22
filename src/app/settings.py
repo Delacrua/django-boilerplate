@@ -12,9 +12,11 @@ DEBUG = env("DEBUG", cast=bool, default=False)
 CI = env("CI", cast=bool, default=False)
 
 include(
-    "conf/settings.py",
-    "conf/installed_apps.py",
-    "conf/middleware.py",
     "conf/boilerplate.py",
     "conf/db.py",
+    "conf/http.py",
+    "conf/installed_apps.py",
+    "conf/middleware.py",
+
+    "conf/settings.py",
 )

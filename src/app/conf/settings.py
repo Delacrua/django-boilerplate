@@ -14,9 +14,6 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 
-ALLOWED_HOSTS = ["*"]
-
-
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
