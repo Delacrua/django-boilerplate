@@ -29,7 +29,6 @@ RUN python3 -m pip wheel -w  "${WHEEL_DIST}" -r /requirements.txt
 
 FROM python:3.10.3-slim-bullseye
 
-# RUN adduser --disabled-password --no-create-home --gecos "" app
 
 ENV PYTHONUNBUFFERED 1
 ENV PYTHONDONTWRITEBYTECODE 1
@@ -57,8 +56,6 @@ COPY . /src
 COPY ./scripts /scripts
 
 RUN chmod +x /scripts/*.sh
-
-# USER app
 
 ENTRYPOINT ["/scripts/entrypoint.sh"]
 

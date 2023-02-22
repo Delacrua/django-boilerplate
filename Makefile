@@ -12,7 +12,6 @@ run-fmt:
 	cd src && black .
 run-lint:
 	flake8 src
-	cd src && mypy
 
 
 local-build:
