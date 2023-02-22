@@ -1,0 +1,20 @@
+version: '3.9'
+
+
+services:
+  web:
+    container_name: app-local
+    restart: unless-stopped
+    build:
+      context: ./src
+      args:
+        REQUIREMENTS_FILE: dev-requirements.txt
+    volumes:
+      - ./src:/src
+    ports:
+        - "8000:8000"
+    environment:
+      - DEBUG=On
+      - SECRET_KEY=MyNotSoSecretKey
+    command: >
+        sh -c "python manage.py runserver 0.0.0.0:8000"
