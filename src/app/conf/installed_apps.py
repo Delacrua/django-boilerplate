@@ -5,8 +5,7 @@ APPS = [
     "app",
 ]
 
-THIRD_PARTY_APPS = [
-]
+THIRD_PARTY_APPS = []
 
 if env("DEBUG", cast=bool, default=False):
     THIRD_PARTY_APPS.append("debug_toolbar")

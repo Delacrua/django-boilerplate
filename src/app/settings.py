@@ -15,4 +15,6 @@ include(
     "conf/settings.py",
     "conf/installed_apps.py",
     "conf/middleware.py",
+    "conf/boilerplate.py",
+    "conf/db.py",
 )
