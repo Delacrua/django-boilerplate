@@ -17,6 +17,7 @@ include(
     "conf/http.py",
     "conf/installed_apps.py",
     "conf/middleware.py",
+    "conf/static.py",
 
     "conf/settings.py",
 )
