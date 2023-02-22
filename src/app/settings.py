@@ -19,6 +19,7 @@ include(
     "conf/i18n.py",
     "conf/middleware.py",
     "conf/static.py",
+    "conf/templates.py",
 
     "conf/settings.py",
 )
