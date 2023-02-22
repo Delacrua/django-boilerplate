@@ -13,8 +13,7 @@ services:
       - ./src:/src
     ports:
         - "8000:8000"
-    environment:
-      - DEBUG=On
-      - SECRET_KEY=MyNotSoSecretKey
+    env_file:
+      - ./src/.env
     command: >
         sh -c "python manage.py runserver 0.0.0.0:8000"

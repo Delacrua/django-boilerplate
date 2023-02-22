@@ -1,0 +1,15 @@
+version: '3.9'
+
+
+services:
+  web:
+    container_name: app-release
+    restart: unless-stopped
+    build:
+      context: ./src
+      args:
+        REQUIREMENTS_FILE: requirements.txt
+    ports:
+        - "8002:8000"
+    env_file:
+      - ./src/.env

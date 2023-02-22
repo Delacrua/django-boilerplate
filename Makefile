@@ -36,3 +36,13 @@ dev-down:
 	docker compose -f docker-compose.dev.yml down
 dev-run-test:
 	docker compose -f docker-compose.dev.yml run web sh -c 'pytest'
+
+
+release-build:
+	docker compose -f docker-compose.release.yml build
+release-up:
+	docker compose -f docker-compose.release.yml up
+release-up-d:
+	docker compose -f docker-compose.release.yml up -d
+release-down:
+	docker compose -f docker-compose.release.yml down
